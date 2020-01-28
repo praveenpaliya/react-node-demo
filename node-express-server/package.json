@@ -1,0 +1,39 @@
+{
+  "name": "phoenix_npm",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "babel-preset-stage-1": "^6.1.18",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0",
+    "jquery": "^3.4.1",
+    "loadash": "^1.0.0",
+    "lodash": "^3.10.1",
+    "node-cache": "^5.1.0",
+    "popper.js": "^1.16.1",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "youtube-api-search": "0.0.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "proxy": "http://localhost:8080/"
+}
